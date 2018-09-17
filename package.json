@@ -1,0 +1,31 @@
+{
+  "name": "node-todo-list",
+  "version": "1.0.0",
+  "description": "node js todo list",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stavrou-1/node_todo_list.git"
+  },
+  "keywords": [
+    "node",
+    "todo",
+    "list"
+  ],
+  "author": "stav0049@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stavrou-1/node_todo_list/issues"
+  },
+  "homepage": "https://github.com/stavrou-1/node_todo_list#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-session": "^2.0.0-beta.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "nodemon": "^1.18.4"
+  }
+}

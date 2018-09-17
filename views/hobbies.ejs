@@ -1,0 +1,9 @@
+<h1>My Hobbies</h1>
+
+<ul>
+<% for (var prop in hobbies) {
+     if (Object.prototype.hasOwnProperty.call(hobbies, prop)) { %>
+       <li><b><%- [prop] %></b> <%- hobbies[prop] %></li>
+    <%}
+   } %>
+</ul>
