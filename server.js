@@ -8,7 +8,6 @@ const app = express();
 app.use(session({secret: 'todotopsecret'}))
 
 .use((req, res, next) => {
-
     if (typeof(req.session.todolist) == 'undefined') {
         req.session.todolist = [];
     }
@@ -32,7 +31,7 @@ app.use(session({secret: 'todotopsecret'}))
 })
 
 .post('/todo/ajouter/', urlencodedParser, (req, res) => {
-    if (req.body.newtodo != '' && req.body.newtodo.indexOf(' ') >= 0) {
+    if (req.body.newtodo != '') {
         req.session.todolist.push(req.body.newtodo);
     }
     res.redirect('/todo');
